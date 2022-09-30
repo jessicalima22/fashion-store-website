@@ -32,19 +32,18 @@ form.addEventListener('submit', (e) => {
     checkInputs();
  });
 
-    
-
-     
-    
 
 function checkInputs(){
     if (emailValue === '') {
         console.log('testinho');
 
         const small = document.querySelector('small');
+        const iconError = document.getElementById('error');
+        console.log(iconError)
         
         small.style.display = 'inline';
         email.style.border = '2px solid hsl(0, 93%, 68%)';
+        iconError.style.display = 'inline';
 
  }};
 

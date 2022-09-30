@@ -34,6 +34,10 @@ body {
   margin: 65px 165px;
 }
 
+form{
+    position: relative;
+}
+
 h1{
   color: hsl(0, 6%, 24%);
   font-size: 62px; 
@@ -94,10 +98,18 @@ input::placeholder{
   margin-top: 38px;
 }
 
-small {
+small{
   display: none;
   color: hsl(0, 93%, 68%);
   margin: 50px 170px
+}
+
+form img{
+    margin: 10px 0px 0px 50px;
+    position: absolute;
+    left: 140px;
+    top: -10px;
+    display: none;
 }
 
     /*- 
