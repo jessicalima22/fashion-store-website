@@ -42,8 +42,9 @@ function checkInputs(){
         console.log('testinho');
 
         const small = document.querySelector('small');
-        console.log(small);
+        
         small.style.display = 'inline';
+        email.style.border = '2px solid hsl(0, 93%, 68%)';
 
  }};
 
