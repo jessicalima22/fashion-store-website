@@ -54,11 +54,11 @@ function checkInputs(){
 
 
  function setErrorFor (email, message){
-    const small = document.querySelector('small');
+    const divError = document.querySelector('.error');
     const iconError = document.getElementById('error');
     
-    small.innerText = message;
-    small.style.display = 'inline';
+    divError.innerText = message;
+    divError.style.display = 'inline';
     email.style.border = '2px solid hsl(0, 93%, 68%)';
     iconError.style.display = 'inline';
  }
