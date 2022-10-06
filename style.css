@@ -1,102 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Josefin+Sans:wght@300;400;600&family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap');
-    
-*{
+
+* {
   font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-
-  /* each rem equal to 10px*/
-  font-size: 62.5%;
+  margin: 0px;
+  border: 0px;
 }
 
-html{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid greenyellow;
-    width: 100%;
-    height: 100vh;
-}
-
-body{
+body {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  outline: 2px solid aqua;
+  margin: 100px auto;
   width: 100%;
-  height: min-content;
-  max-width: 1440px;
+  max-width: 1440px; 
 }
 
-.background-woman{
-  width: 100%;
-  max-width: 610px;
+.background-woman {
+  width: 610px;
 }
 
-.contents{
-  outline: 4px solid red;
-  width: 100%;
-  max-width: 830px;
-  height: auto;
-  align-items: stretch;
-  background-size: contain;
-  background-repeat: no-repeat;
+.contents {
+  width:830px;
+  background-repeat: repeat-y;
   background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
-.div-contents{
-  width: 100%;
-  max-width: 450px;
-  max-height: 420px;
-  margin: 6.5rem 0 0.5rem 16rem;
-  
+.div-contents {
+  width: 450px;
+  height: 410px;
+  margin: 65px 165px 0px 165px;
 }
 
-.contents img{
-  margin: 6.5rem 16rem;
+.contents img {
+  margin: 65px 165px;
 }
 
-
-
-h1{
-  color: hsl(0, 6%, 24%);
-  font-size: 6.2rem; 
-  line-height: 7rem; 
-  font-weight: 700;
-  letter-spacing: 2rem;
-}
-
-span{
-  font-size: 6.2rem;
-  font-weight: 300;
-  color: hsl(0, 36%, 70%);
-  letter-spacing: 2rem;
-}
-
-p{
-  margin: 1.8rem 0 4rem 0;
-  line-height: 2.8rem;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: hsl(0, 36%, 70%);
-}
-
-input{
-  background-color: hsla(0, 87%, 42%, 0);
-  width: 100%;
-  max-width: 400px;
-  height: 5.5rem;
-  border: solid 0.5px hsla(0, 36%, 70%, 0.5);
-  border-radius: 3rem;
+form{
   position: relative;
 }
 
-#email{
-  padding-left: 3rem;
-  font-size: 1.6rem;
+h1 {
+  color: hsl(0, 6%, 24%);
+  font-size: 62px; 
+  line-height: 70px; 
+  font-weight: 700;
+  letter-spacing: 20px;
+}
+
+span {
+  font-weight: 300;
   color: hsl(0, 36%, 70%);
+  letter-spacing: 20px;
+}
+
+p {
+  margin-top: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+}
+
+input {
+  background-color: hsla(0, 87%, 42%, 0);
+  margin-top: 40px;
+  width: 400px;
+  height: 50px;
+  border: solid 0.5px hsla(0, 36%, 70%, 0.5);
+  border-radius: 30px;
+}
+
+#email{
+  position: absolute;
+  padding-left: 30px;
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+}
+
+form:invalid {
+  background-color: aquamarine;
 }
 
 #email:focus{
@@ -108,37 +88,37 @@ input::placeholder{
   color: hsl(0, 36%, 70%, 0.5);
 }
 
-#submit{
-  margin-left: -5.5rem;
-  width: 100%;
-  max-width: 100px;
-  height: 5.8rem;
+
+
+#submit {
+  position: absolute;
+  margin-left: 350px;
+  width: 100px;
+  height: 58px;
   background: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 1rem 4rem  hsl(0, 35%, 78%);
-  border-radius: 3rem;
-  
-  position: absolute;
+  border: 0px;
+  box-shadow: 0px 10px 40px  hsl(0, 35%, 78%);
+  border-radius: 30px;
+  margin-top: 38px;
 }
 
-.error{
-  display: hidden;
+
+small {
+  display: none;
   color: hsl(0, 93%, 68%);
-  margin-left: 19rem;
-  padding-top: 100px;
-  font-size: 1.3rem;
- 
-
+  margin: 50px 170px
 }
 
-#error{
-    margin: 0 ;
-    left: 50rem;
-    bottom: 24rem;
-    display: none;
-    position: absolute;
+form img{
+  margin: 10px 0px 0px 50px;
+  position: absolute;
+  left: 140px;
+  top: -10px;
+  display: none;
 }
+
 
     /*- 
      background: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -148,9 +128,7 @@ input::placeholder{
     
     Desaturated Red: hsl(0, 36%, 70%)
 - Soft Red: hsl(0, 93%, 68%)
-
 ### Neutral
-
 - Dark Grayish Red: hsl(0, 6%, 24%)*/
 
       /*- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
